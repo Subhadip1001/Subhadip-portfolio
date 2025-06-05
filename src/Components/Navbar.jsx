@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-scroll";
+import logo from "../assets/logo.png";
 
 
 const Navbar = () => {
@@ -13,7 +14,7 @@ const Navbar = () => {
       
       {/* Logo */}
       <div className="h-[150px] w-[150px] text-white ml-4 text-2xl font-bold">
-        <img src="./src/assets/logo.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </div>
 
       {/* Desktop Menu */}
