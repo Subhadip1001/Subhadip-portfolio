@@ -1,13 +1,14 @@
 import React from 'react';
-import { Element } from 'react-scroll';
 import tranquilo from '../assets/tranquilo.png';
+import li from '../assets/library.png';
 
 const Project = () => {
   const projects = [
     {
       name: 'BookSelf',
       description: 'An online bookstore application.',
-      image: 'https://images.photowall.com/products/52923/bookshelf-black-brown-1.jpg?h=699&q=85',
+      // image: 'https://images.photowall.com/products/52923/bookshelf-black-brown-1.jpg?h=699&q=85',
+      image: li,
       repo: 'https://github.com/Subhadip1001/BookShelf'
     },
     {
