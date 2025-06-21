@@ -50,7 +50,7 @@ const Home = () => {
           {/* Capsule Background */}
           <span className="absolute inset-1 bg-black w-full h-full rounded-full -z-8 rotate-[-5deg]"></span>
           {/* Capsule Text */}
-          <span className='px-3 py-1 md:px-5 md:py-2 lg:px-7 lg:py-3 bg-blue-300 border border-b-2 border-r-2 border-black rounded-full rotate-[-5deg] inline-block'>
+          <span className='px-3 py-1 md:px-5 md:py-2 lg:px-7 lg:py-3 bg-blue-300 border border-b border-r border-black rounded-full rotate-[-5deg] inline-block'>
             MERNStack
           </span>
         </span>
