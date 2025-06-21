@@ -7,13 +7,38 @@ import resume from '../assets/Resume/Subhadip_resume.pdf';
 const Home = () => {
   const homeRef = React.useRef(null);
 
+  const tl = gsap.timeline();
+
   useGSAP(() => {
-    gsap.from(homeRef.current, {
+    tl.from(homeRef.current, {
+      y: -100,
       opacity: 0,
-      duration: 2,
-      stagger: 0.3
+      duration: 1,
+      ease: 'power2.out',
     });
-  });
+
+    tl.from(homeRef.current.querySelector('h1'), {
+      scale: 0.5,
+      opacity: 0,
+      duration: 1,
+      ease: 'back.out(1.7)',
+    }, '<');
+
+    tl.from(homeRef.current.querySelector('p'), {
+      opacity: 0,
+      y: 30,
+      duration: 0.3,
+      ease: 'power2.out',
+    }, '<');
+
+    tl.from(homeRef.current.querySelector('a'), {
+      opacity: 0,
+      delay: 2,
+      y: 30,
+      duration: 0.3,
+      ease: 'power2.out',
+    }, '<');
+  }, []);
   
   return (
     <div ref={homeRef} name="Home" className='h-screen w-full bg-yellow-300 flex flex-col justify-center items-center text-center px-4 md:px-8 lg:px-16'>
@@ -25,7 +50,7 @@ const Home = () => {
           {/* Capsule Background */}
           <span className="absolute inset-1 bg-black w-full h-full rounded-full -z-8 rotate-[-5deg]"></span>
           {/* Capsule Text */}
-          <span className='px-3 py-1 md:px-5 md:py-2 lg:px-7 lg:py-3 bg-blue-300 rounded-full border-black border border-b-4 border-r-4 rotate-[-4deg] inline-block'>
+          <span className='px-3 py-1 md:px-5 md:py-2 lg:px-7 lg:py-3 bg-blue-300 border border-b-2 border-r-2 border-black rounded-full rotate-[-5deg] inline-block'>
             MERNStack
           </span>
         </span>

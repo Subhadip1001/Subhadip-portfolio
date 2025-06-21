@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-scroll";
 import logo from "../assets/logo.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 
 const Navbar = () => {
@@ -9,8 +11,37 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const list = ["Home", "Education", "Project", "Skills", "Contact"];
 
+  const listRef = useRef(null);
+
+  // GSAP animation for the navbar
+  const tl = gsap.timeline();
+
+  useGSAP(() => {
+    tl.from(".navbar", {
+      y: -100,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out",
+    });
+
+    tl.from(".navbar img", {
+      scale: 0.5,
+      opacity: 0,
+      duration: 1,
+      ease: "back.out(1.7)",
+    }, "<");
+
+    tl.from(listRef.current.children, {
+      opacity: 0,
+      y: 30,
+      stagger: 0.15,
+      duration: 0.3,
+      ease: "power2.out",
+    }); 
+  }, []);
+
   return (
-    <div className="w-[96%] px-8 bg-[#7562AB] flex justify-between items-center rounded-full border-b-3 border-r-3 border-black z-10 fixed top-2 md:top-3 lg:top-5 left-[2%] h-16">
+    <div className="navbar w-[96%] px-8 bg-[#7562AB] flex justify-between items-center rounded-full border-b-3 border-r-3 border-black z-10 fixed top-2 md:top-3 lg:top-5 left-[2%] h-16">
       
       {/* Logo */}
       <div className="h-[150px] w-[150px] text-white ml-4 text-2xl font-bold">
@@ -18,7 +49,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex justify-evenly w-1/2">
+      <div ref={listRef} className="hidden md:flex justify-evenly w-1/2">
         {list.map((item) => (
           <Link
             key={item}
