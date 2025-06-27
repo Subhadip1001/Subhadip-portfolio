@@ -17,6 +17,7 @@ const Skills = () => {
     { id: 14, name: 'GSAP', level: '' },
     { id: 15, name: 'Socket.io', level: '' },
     { id: 16, name: 'PostgreSQL', level: '' },
+    { id: 17, name: 'TypeScript', level: '' },
   ]
   return (
     <div name="Skills" className='h-screen w-full px-2 md:px-4 lg:px-8 bg-yellow-300 flex flex-col justify-center items-center shadow-lg'>
