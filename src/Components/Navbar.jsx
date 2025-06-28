@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-scroll";
-import logo from "../assets/logo.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -24,7 +23,7 @@ const Navbar = () => {
       ease: "power2.out",
     });
 
-    tl.from(".navbar img", {
+    tl.from(".navbar h1", {
       scale: 0.5,
       opacity: 0,
       duration: 1,
@@ -44,8 +43,8 @@ const Navbar = () => {
     <div className="navbar w-[96%] px-8 bg-[#7562AB] flex justify-between items-center rounded-full border-b-3 border-r-3 border-black z-10 fixed top-2 md:top-3 lg:top-5 left-[2%] h-16">
       
       {/* Logo */}
-      <div className="h-[150px] w-[150px] text-white ml-4 text-2xl font-bold">
-        <img src={logo} alt="Logo" />
+      <div className="text-white ml-4 text-2xl font-bold flex justify-center items-center">
+        <h1 className="font-bold uppercase lg:text-xl md:text-lg text-base ">Subhadip Mandal <span className="text-yellow-400 lg:text-lg text-sm font-thin">&lt; / &gt;</span></h1>
       </div>
 
       {/* Desktop Menu */}
