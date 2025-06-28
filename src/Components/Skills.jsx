@@ -21,8 +21,8 @@ const Skills = () => {
   ]
   return (
     <div name="Skills" className='h-screen w-full px-2 md:px-4 lg:px-8 bg-yellow-300 flex flex-col justify-center items-center shadow-lg'>
-      <h1 className='uppercase position-relative font-extrabold text-6xl md:text-6xl lg:text-8xl' style={{ textShadow: '2px 0px 0px rgb(255, 255, 255)' }}>Skills</h1>
-      <div className='w-[80%] border border-black border-b-4 border-r-4 rounded-xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 mt-8 md:mt-10 lg:mt-12 p-4 md:p-6 lg:p-8 shadow-md' style={{ backgroundColor: 'rgba(249, 245, 245, 0.57)' }}>
+      <h1 className='uppercase position-relative text-[#2A2A2A] font-extrabold text-6xl md:text-6xl lg:text-8xl' style={{ textShadow: '2px 0px 0px rgb(255, 255, 255)' }}>Skills</h1>
+      <div className='w-[80%] border border-[#2A2A2A] border-b-4 border-r-4 rounded-xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 mt-8 md:mt-10 lg:mt-12 p-4 md:p-6 lg:p-8 shadow-md' style={{ backgroundColor: 'rgba(249, 245, 245, 0.57)' }}>
         {
           skills.map((skill) => {
             return (

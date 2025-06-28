@@ -1,8 +1,12 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body{
-  font-family: "Titan One", sans-serif;
+  /* font-family: "Titan One", sans-serif; */
+   /* font-family: "Boldonse", system-ui; */
+   font-family: "Press Start 2P", system-ui;
 }
 
 /* Hide scrollbar for all browsers */

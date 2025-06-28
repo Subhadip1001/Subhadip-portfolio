@@ -31,7 +31,7 @@ const Project = () => {
     }
   ];
   return (
-    <div name="Project" className='h-screen w-full px-4 bg-black flex flex-col justify-center items-center'>
+    <div name="Project" className='h-screen w-full px-4 bg-[#2A2A2A] flex flex-col justify-center items-center'>
       <h1 className='uppercase font-extrabold text-5xl md:text-6xl lg:text-8xl text-yellow-300 text-center' style={{ textShadow: '2px 0px 0px rgb(255, 255, 255)' }}>
         Projects
       </h1>
@@ -40,7 +40,7 @@ const Project = () => {
           <div
             key={index}
             onClick={() => window.open(project.repo, '_blank')}
-            className='border border-yellow-300 bg-black p-2 md:p-4 lg:p-6 rounded-lg text-yellow-300 hover:scale-105 transition duration-500 ease-in-out hover:shadow-lg hover:shadow-yellow hover:bg-yellow-300 hover:text-black cursor-pointer'
+            className='border border-yellow-300 bg-[#2A2A2A] p-2 md:p-4 lg:p-6 rounded-lg text-yellow-300 hover:scale-105 transition duration-500 ease-in-out hover:shadow-lg hover:shadow-yellow hover:bg-yellow-300 hover:text-black cursor-pointer'
           >
             <img
               src={project.image}

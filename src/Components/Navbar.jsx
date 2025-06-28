@@ -40,11 +40,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar w-[96%] px-8 bg-[#7562AB] flex justify-between items-center rounded-full border-b-3 border-r-3 border-black z-10 fixed top-2 md:top-3 lg:top-5 left-[2%] h-16">
+    <div className="navbar w-[96%] px-8 bg-[#7562AB] flex justify-between items-center rounded-full border-b-3 border-r-3 border-[#2A2A2A] z-10 fixed top-2 md:top-3 lg:top-5 left-[2%] h-16">
       
       {/* Logo */}
       <div className="text-white ml-4 text-2xl font-bold flex justify-center items-center">
-        <h1 className="font-bold uppercase lg:text-xl md:text-lg text-base ">Subhadip Mandal <span className="text-yellow-400 lg:text-lg text-sm font-thin">&lt; / &gt;</span></h1>
+        <h1 className="font-bold uppercase lg:text-xl md:text-lg text-base ">Subhadip Mandal <span className="text-yellow-300 lg:text-lg text-sm font-thin">&lt; / &gt;</span></h1>
       </div>
 
       {/* Desktop Menu */}
@@ -57,7 +57,7 @@ const Navbar = () => {
             duration={900}
             onClick={() => setActive(item)} // Set active menu item on click
             className={`h-8 px-4 rounded-full flex justify-center items-center font-semibold text-white cursor-pointer uppercase
-              ${active === item ? "bg-pink-400 border-black border-b-4 border-r-4 border" : "hover:border"}`}
+              ${active === item ? "bg-pink-400 border-[#2A2A2A] border-b-3 border-r-3 border" : "hover:border"}`}
           >
             {item}
           </Link>

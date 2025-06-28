@@ -42,15 +42,15 @@ const Home = () => {
   
   return (
     <div ref={homeRef} name="Home" className='h-screen w-full bg-yellow-300 flex flex-col justify-center items-center text-center px-4 md:px-8 lg:px-16'>
-      <h1 className='font-extrabold uppercase text-[50px] md:text-[70px] lg:text-[100px] leading-tight text-black relative' style={{ textShadow: '2px 0px 0px rgb(255, 255, 255)' }}>
+      <h1 className='font-extrabold uppercase text-[50px] md:text-[70px] lg:text-[100px] leading-tight text-[#2A2A2A] relative' style={{ textShadow: '2px 0px 0px rgb(255, 255, 255)' }}>
         I'm Subhadip <br />
         Creative 
         {/* Capsule Wrapper */}
         <span className="relative inline-block mx-2 md:mx-4">
           {/* Capsule Background */}
-          <span className="absolute inset-1 bg-black w-full h-full rounded-full -z-8 rotate-[-5deg]"></span>
+          <span className="absolute inset-1 bg-[#2A2A2A] w-full h-full rounded-full -z-8 rotate-[-5deg]"></span>
           {/* Capsule Text */}
-          <span className='px-3 py-1 md:px-5 md:py-2 lg:px-7 lg:py-3 bg-blue-300 border border-b border-r border-black rounded-full rotate-[-5deg] inline-block'>
+          <span className='px-3 py-1 md:px-5 md:py-2 lg:px-7 lg:py-3 bg-blue-300 border border-b border-r border-black rounded-full rotate-[-5deg] inline-block  drop-shadow shadow-white'>
             MERNStack
           </span>
         </span>
