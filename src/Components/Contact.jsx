@@ -10,7 +10,7 @@ const Contact = () => {
       <form
         action="https://formspree.io/f/xrbpwrpd" // Replace with your Formspree endpoint or backend
         method="POST"
-        className='bg-white rounded-2xl shadow-xl mt-10 p-6 md:p-10 lg:p-12 border border-b-4 border-r-4 border-black w-full max-w-2xl'
+        className='bg-white rounded-2xl shadow-xl mt-10 p-6 md:p-10 lg:p-12 border border-b-4 border-r-4 border-[#2A2A2A] w-full max-w-2xl'
       >
         <div className="flex flex-col gap-4">
           <input
@@ -36,7 +36,7 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="uppercase font-bold bg-pink-400 border-black border-b-4 border-r-4 rounded-full px-6 py-3 hover:bg-pink-500 transition"
+            className="uppercase font-bold bg-pink-400 border-[#2A2A2A] border-b-3 border-r-3 rounded-full px-6 py-3 hover:bg-pink-500 transition"
           >
             Send Message
           </button>
