@@ -1,14 +1,14 @@
 import React from 'react';
 import tranquilo from '../assets/tranquilo.png';
-import li from '../assets/library.png';
+import bookShelf from '../assets/bookShelf.png';
+import quizCreaft from '../assets/quizCraft.png';
 
 const Project = () => {
   const projects = [
     {
       name: 'BookSelf',
       description: 'An online bookstore application.',
-      // image: 'https://images.photowall.com/products/52923/bookshelf-black-brown-1.jpg?h=699&q=85',
-      image: li,
+      image: bookShelf,
       repo: 'https://github.com/Subhadip1001/BookShelf'
     },
     {
@@ -24,41 +24,48 @@ const Project = () => {
       repo: 'https://github.com/Subhadip1001/Tranquilo'
     },
     {
-      name: 'Dictionary',
-      description: 'An online dictionary application using a dictionary API.',
-      image: 'https://www.collinsdictionary.com/images/thumb/dictionary_168552845_250.jpg',
-      repo: 'https://github.com/Subhadip1001/JavaScript_Projects/tree/main/Dictionary'
+      name: 'QuizCraft',
+      description: 'A full-stack quiz app with user roles, AI-generated questions, scoring, analytics, and an interactive chatbot assistant.',
+      image: quizCreaft,
+      repo: 'https://github.com/Subhadip1001/QuizCraft.git'
     }
   ];
   return (
-    <div name="Project" className='h-screen w-full px-4 bg-[#2A2A2A] flex flex-col justify-center items-center'>
-      <h1 className='uppercase font-extrabold text-5xl md:text-6xl lg:text-8xl text-yellow-300 text-center' style={{ textShadow: '2px 0px 0px rgb(255, 255, 255)' }}>
+    <div name="Project" className='min-h-screen w-full px-2 md:px-4 lg:px-8 bg-[#2A2A2A] flex flex-col justify-center items-center py-8'>
+      <h1 className='uppercase font-extrabold text-6xl sm:text-4xl md:text-5xl lg:text-7xl text-yellow-300 text-center mb-6' style={{ textShadow: '2px 0px 0px rgb(255, 255, 255)' }}>
         Projects
       </h1>
-      <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-10 mt-8 md:mt-8 lg:mt-10'>
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            onClick={() => window.open(project.repo, '_blank')}
-            className='border border-yellow-300 bg-[#2A2A2A] p-2 md:p-4 lg:p-6 rounded-lg text-yellow-300 hover:scale-105 transition duration-500 ease-in-out hover:shadow-lg hover:shadow-yellow hover:bg-yellow-300 hover:text-black cursor-pointer'
-          >
-            <img
-              src={project.image}
-              alt={project.name}
-              className='w-full h-32 md:h-40 lg:h-48 object-cover rounded-md mb-4 border border-b-2 border-r-2 border-yellow-300'
-            />
-            <h2 className='text-lg md:text-xl lg:text-2xl font-bold mb-2'>{project.name}</h2>
-            <p className='text-xs md:text-base lg:text-lg'>{project.description}</p>
-          </div>
-        ))}
+      <div className='w-full flex justify-center'>
+        <div className='grid gap-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-4 w-full max-w-7xl'>
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              onClick={() => window.open(project.repo, '_blank')}
+              className='relative group cursor-pointer rounded-2xl overflow-hidden border-2 border-yellow-300 shadow-md hover:shadow-yellow-300 transition-transform transform hover:scale-105 bg-yellow-300 w-full'
+            >
+              <div>
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className='w-full h-40 sm:h-44 md:h-48 lg:h-56 object-fill rounded-t-2xl'
+                />
+              </div>
+              <div className='px-3 py-2 sm:px-4 sm:py-3'>
+                <h2 className='text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-1'>{project.name}</h2>
+                <p className='text-xs sm:text-sm md:text-base'>{project.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-      <button 
-        onClick={() => window.open('https://github.com/Subhadip1001?tab=repositories', '_blank')} 
-        className='px-12 py-2 font-bold border border-yellow-300 rounded-full mt-10 text-yellow-300 hover:text-black hover:bg-yellow-300 transition duration-500 ease-in-out cursor-pointer'>
-        More
+      <button
+        onClick={() => window.open('https://github.com/Subhadip1001?tab=repositories', '_blank')}
+        className="mt-10 px-6 py-2 rounded-full border-2 border-yellow-300 text-yellow-300 font-bold text-base sm:text-lg hover:bg-yellow-300 hover:text-black transition duration-300"
+      >
+        View More Projects
       </button>
     </div>
   );
 };
 
-export default Project;
+export default Project
