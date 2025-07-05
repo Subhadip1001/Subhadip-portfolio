@@ -32,7 +32,7 @@ const Project = () => {
   ];
   return (
     <div name="Project" className='min-h-screen w-full px-2 md:px-4 lg:px-8 bg-[#2A2A2A] flex flex-col justify-center items-center py-8'>
-      <h1 className='uppercase font-extrabold text-5xl sm:text-4xl md:text-5xl lg:text-7xl text-yellow-300 text-center mb-6' style={{ textShadow: '2px 0px 0px rgb(255, 255, 255)' }}>
+      <h1 className='uppercase font-extrabold text-5xl md:text-6xl lg:text-8xl text-yellow-300 text-center mb-6' style={{ textShadow: '2px 0px 0px rgb(255, 255, 255)' }}>
         Projects
       </h1>
       <div className='w-full flex justify-center'>
