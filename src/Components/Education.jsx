@@ -35,7 +35,7 @@ const Education = () => {
       </h1>
       <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 mt-6 md:mt-8 lg:mt-10'>
         {education.map((item) => (
-          <div key={item.id} className='bg-white py-6 px-4 md:py-8 md:px-6 lg:py-10 lg:px-8 rounded-lg shadow-lg border border-b-3 border-r-3 border-black hover:scale-105 hover:bg-yellow-300 transition duration-500 ease-in-out'>
+          <div key={item.id} className='bg-white py-3 px-2 md:py-8 md:px-6 lg:py-10 lg:px-8 rounded-xl shadow-lg border border-b-3 border-r-3 border-black hover:scale-105 hover:bg-yellow-300 transition duration-500 ease-in-out'>
             <img
               src={`${item.img}`}
               alt={item.name}
