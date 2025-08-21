@@ -77,7 +77,7 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="absolute top-16 right-0 w-full bg-purple-600 md:hidden flex flex-col items-center py-4 shadow-lg border-b-4 border-black rounded-b-lg">
+        <div className="absolute top-16 right-0 w-full bg-[#7562AB] md:hidden flex flex-col items-center py-4 shadow-lg border-b-4 border-black rounded-xl px-4">
           {list.map((item) => (
             <Link
               key={item}
@@ -88,7 +88,7 @@ const Navbar = () => {
                 setActive(item);
                 setIsOpen(false); // Close menu after selection
               }}
-              className={`py-2 w-full text-center text-white font-semibold uppercase cursor-pointer 
+              className={`py-2 w-full text-center text-white font-semibold uppercase cursor-pointer rounded-full 
                 ${active === item ? "bg-pink-400 border-black border-b-4 border-r-4 border" : "hover:bg-pink-400"}`}
             >
               {item}
