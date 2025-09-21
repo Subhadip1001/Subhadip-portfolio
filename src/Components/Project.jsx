@@ -21,7 +21,7 @@ const Project = () => {
       name: 'Tranquilo',
       description: 'Designed a user-friendly website for a mental health chatbot that supports natural conversations and multiple languages.',
       image: tranquilo,
-      repo: 'https://github.com/Subhadip1001/Tranquilo'
+      repo: 'https://tranquilo-uqse.vercel.app/'
     },
     {
       name: 'QuizCraft',
