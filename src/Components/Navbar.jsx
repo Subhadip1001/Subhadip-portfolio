@@ -48,7 +48,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Menu */}
-      <div ref={listRef} className="hidden md:flex justify-evenly w-1/2">
+      <div ref={listRef} className="hidden md:flex justify-evenly w-1/2 text-xl md:text-xs lg:text-sm">
         {list.map((item) => (
           <Link
             key={item}
